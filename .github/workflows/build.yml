@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 */2 *'
-
+env:
+   TARGET_JDK8_VERSION: "8u372"  # 直接修改此处即可切换版本，如改为8u392、8u412
 jobs:
   build_android:
     strategy:
