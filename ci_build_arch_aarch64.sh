@@ -4,7 +4,7 @@
 # 1. 接收从workflow传递的JDK 8版本号（如8u402），无参数则默认用8u392
 TARGET_JDK8_VERSION=$1
 if [ -z "$TARGET_JDK8_VERSION" ]; then
-  TARGET_JDK8_VERSION="8u392"  # 默认版本，防止无参数时编译失败
+  TARGET_JDK8_VERSION="8u372"  # 默认版本，防止无参数时编译失败
 fi
 
 # 2. 定义对应版本的OpenJDK 8源码下载URL（需根据实际源码仓库调整链接格式）
